@@ -1,0 +1,2018 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agustin Rahayu Intan Berlianti | Guru IPS</title>
+
+    <meta name="description"
+          content="Portofolio Agustin Rahayu Intan Berlianti, Guru Ilmu Pengetahuan Sosial SMP Negeri 1 Kwadungan.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        /* =========================================
+           GLOBAL
+        ========================================= */
+
+        :root {
+            --cream: #f8f3e9;
+            --cream-dark: #eee4d2;
+            --brown: #5b351d;
+            --brown-light: #795538;
+            --gold: #b58a4b;
+            --gold-light: #d5b477;
+            --dark: #2d2119;
+            --white: #ffffff;
+            --text: #44382f;
+            --shadow: 0 15px 45px rgba(72, 45, 25, 0.10);
+            --radius: 18px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            color: var(--text);
+            background: var(--cream);
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1120px, 90%);
+            margin: auto;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title span {
+            display: block;
+            color: var(--gold);
+            font-size: 14px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .section-title h2 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 48px;
+            color: var(--brown);
+            font-weight: 600;
+        }
+
+        .section-title p {
+            max-width: 650px;
+            margin: 12px auto 0;
+            color: #76685c;
+        }
+
+
+        /* =========================================
+           ORNAMEN JAWA
+        ========================================= */
+
+        .javanese-pattern {
+            height: 12px;
+            background:
+                repeating-linear-gradient(
+                    45deg,
+                    var(--brown) 0,
+                    var(--brown) 8px,
+                    var(--gold) 8px,
+                    var(--gold) 16px,
+                    var(--cream-dark) 16px,
+                    var(--cream-dark) 24px
+                );
+        }
+
+        .ornament {
+            position: absolute;
+            color: var(--gold);
+            opacity: .35;
+            font-size: 100px;
+            pointer-events: none;
+        }
+
+        .ornament-left {
+            left: -25px;
+            top: 100px;
+        }
+
+        .ornament-right {
+            right: -25px;
+            bottom: 50px;
+        }
+
+
+        /* =========================================
+           NAVBAR
+        ========================================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(248, 243, 233, .95);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(91, 53, 29, .08);
+        }
+
+        nav {
+            height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-mark {
+            width: 45px;
+            height: 45px;
+            border: 1px solid var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--brown);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .logo-text strong {
+            display: block;
+            color: var(--brown);
+            font-size: 14px;
+            line-height: 1.2;
+        }
+
+        .logo-text small {
+            font-size: 10px;
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 27px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 12px;
+            font-weight: 500;
+            position: relative;
+            padding: 8px 0;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--gold);
+            transition: .3s;
+            transform: translateX(-50%);
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        .menu-btn {
+            display: none;
+            font-size: 24px;
+            color: var(--brown);
+            cursor: pointer;
+        }
+
+
+        /* =========================================
+           HERO
+        ========================================= */
+
+        .hero {
+            min-height: 100vh;
+            padding-top: 78px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border: 1px solid rgba(181, 138, 75, .25);
+            border-radius: 50%;
+            right: -180px;
+            top: 100px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .hero-text .eyebrow {
+            color: var(--gold);
+            font-size: 14px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .hero-text h1 {
+            font-family: "Cormorant Garamond", serif;
+            color: var(--brown);
+            font-size: clamp(55px, 6vw, 78px);
+            line-height: .95;
+            font-weight: 600;
+            margin-bottom: 22px;
+        }
+
+        .hero-text h1 span {
+            display: block;
+            color: var(--gold);
+        }
+
+        .hero-text h3 {
+            color: var(--brown-light);
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 18px;
+        }
+
+        .hero-text p {
+            max-width: 570px;
+            color: #76685c;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 24px;
+            background: var(--brown);
+            color: var(--white);
+            border-radius: 5px;
+            font-size: 13px;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        .hero-photo {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .photo-frame {
+            width: 410px;
+            height: 520px;
+            position: relative;
+            border: 1px solid var(--gold-light);
+            padding: 15px;
+            background: var(--cream);
+        }
+
+        .photo-frame::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--gold);
+            top: -12px;
+            left: 12px;
+            z-index: -1;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .hero-badge {
+            position: absolute;
+            bottom: 25px;
+            left: -25px;
+            background: var(--brown);
+            color: white;
+            padding: 18px 25px;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-badge strong {
+            display: block;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 25px;
+            color: var(--gold-light);
+        }
+
+        .hero-badge small {
+            font-size: 11px;
+        }
+
+
+        /* =========================================
+           PROFIL
+        ========================================= */
+
+        .profile {
+            background: #fffaf2;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .profile-card {
+            background: var(--cream);
+            padding: 45px;
+            border-left: 4px solid var(--gold);
+            box-shadow: var(--shadow);
+        }
+
+        .profile-card h3 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 34px;
+            color: var(--brown);
+            margin-bottom: 20px;
+        }
+
+        .profile-info {
+            display: grid;
+            gap: 17px;
+        }
+
+        .profile-info div {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .profile-info i {
+            width: 35px;
+            color: var(--gold);
+            margin-top: 5px;
+        }
+
+        .profile-info strong {
+            display: block;
+            font-size: 12px;
+            color: #8b7c6d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .profile-info span {
+            font-size: 14px;
+            color: var(--brown);
+        }
+
+        .about-text h3 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 42px;
+            color: var(--brown);
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+            color: #76685c;
+        }
+
+        .quote {
+            margin-top: 30px;
+            padding: 25px;
+            border-top: 1px solid var(--gold-light);
+            border-bottom: 1px solid var(--gold-light);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 25px;
+            color: var(--brown);
+            font-style: italic;
+        }
+
+
+        /* =========================================
+           KONTEN EDUKASI
+        ========================================= */
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .edu-card {
+            background: var(--white);
+            border: 1px solid #eadfce;
+            padding: 30px;
+            transition: .3s;
+        }
+
+        .edu-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+            border-color: var(--gold-light);
+        }
+
+        .edu-icon {
+            width: 55px;
+            height: 55px;
+            border: 1px solid var(--gold-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 22px;
+            margin-bottom: 22px;
+        }
+
+        .edu-card h3 {
+            color: var(--brown);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+
+        .edu-card p {
+            color: #76685c;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .read-more {
+            color: var(--gold);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+
+        /* =========================================
+           PENGALAMAN
+        ========================================= */
+
+        .experience {
+            background: #fffaf2;
+        }
+
+        .timeline {
+            max-width: 800px;
+            margin: auto;
+            position: relative;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: var(--gold-light);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 60px;
+            margin-bottom: 45px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 7px;
+            top: 5px;
+            width: 17px;
+            height: 17px;
+            border-radius: 50%;
+            background: var(--cream);
+            border: 3px solid var(--gold);
+        }
+
+        .timeline-year {
+            color: var(--gold);
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        .timeline-item h3 {
+            color: var(--brown);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 28px;
+        }
+
+        .timeline-item p {
+            color: #76685c;
+            font-size: 13px;
+        }
+
+
+        /* =========================================
+           PRESTASI
+        ========================================= */
+
+        .achievement-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .achievement {
+            text-align: center;
+            padding: 40px 25px;
+            background: #fffaf2;
+            border: 1px solid #eadfce;
+        }
+
+        .achievement i {
+            font-size: 35px;
+            color: var(--gold);
+            margin-bottom: 18px;
+        }
+
+        .achievement h3 {
+            font-family: "Cormorant Garamond", serif;
+            color: var(--brown);
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+
+        .achievement p {
+            font-size: 13px;
+            color: #76685c;
+        }
+
+
+        /* =========================================
+           MEDIA PEMBELAJARAN
+        ========================================= */
+
+        .media {
+            background: #fffaf2;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .media-card {
+            background: var(--white);
+            overflow: hidden;
+            border: 1px solid #eadfce;
+            transition: .3s;
+        }
+
+        .media-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow);
+        }
+
+        .media-image {
+            height: 190px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--cream-dark);
+            color: var(--brown);
+            font-size: 60px;
+        }
+
+        .media-content {
+            padding: 25px;
+        }
+
+        .media-content h3 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 26px;
+            color: var(--brown);
+        }
+
+        .media-content p {
+            font-size: 13px;
+            color: #76685c;
+            margin: 8px 0 15px;
+        }
+
+
+        /* =========================================
+           KONTAK
+        ========================================= */
+
+        .contact {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 60px;
+        }
+
+        .contact-info h3 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 40px;
+            color: var(--brown);
+            margin-bottom: 15px;
+        }
+
+        .contact-info p {
+            color: #76685c;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 22px;
+        }
+
+        .contact-item i {
+            color: var(--gold);
+            font-size: 20px;
+            width: 25px;
+        }
+
+        .contact-item strong {
+            display: block;
+            color: var(--brown);
+            font-size: 13px;
+        }
+
+        .contact-item span {
+            color: #76685c;
+            font-size: 13px;
+        }
+
+        .contact-form {
+            background: #fffaf2;
+            padding: 40px;
+            border: 1px solid #eadfce;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--brown);
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            border: 1px solid #dfd2bf;
+            background: var(--white);
+            padding: 13px 15px;
+            outline: none;
+            font-family: "Poppins", sans-serif;
+            font-size: 13px;
+        }
+
+        .form-group textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: var(--gold);
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        footer {
+            background: var(--brown);
+            color: white;
+            padding: 50px 0 25px;
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid rgba(255,255,255,.15);
+        }
+
+        .footer-brand h3 {
+            font-family: "Cormorant Garamond", serif;
+            font-size: 30px;
+        }
+
+        .footer-brand p {
+            font-size: 12px;
+            color: #d8c9b5;
+        }
+
+        .social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255,255,255,.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+        }
+
+        .social a:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+        }
+
+        .copyright {
+            text-align: center;
+            color: #cbbba6;
+            font-size: 11px;
+            padding-top: 20px;
+        }
+
+
+        /* =========================================
+           RESPONSIVE TABLET
+        ========================================= */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                gap: 14px;
+            }
+
+            .hero-content,
+            .profile-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 130px;
+                padding-bottom: 80px;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .hero-text p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-photo {
+                margin-top: 30px;
+            }
+
+            .education-grid,
+            .achievement-grid,
+            .media-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .profile-card {
+                max-width: 600px;
+                margin: auto;
+            }
+
+            .about-text {
+                text-align: center;
+            }
+        }
+
+
+        /* =========================================
+           RESPONSIVE MOBILE
+        ========================================= */
+
+        @media (max-width: 650px) {
+
+            .section {
+                padding: 75px 0;
+            }
+
+            .section-title h2 {
+                font-size: 40px;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 78px;
+                left: 0;
+                width: 100%;
+                background: var(--cream);
+                flex-direction: column;
+                padding: 20px 5%;
+                gap: 0;
+                display: none;
+                border-bottom: 1px solid #e2d6c3;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links li {
+                padding: 12px 0;
+                border-bottom: 1px solid #eadfce;
+            }
+
+            .nav-links a::after {
+                display: none;
+            }
+
+            .hero-text h1 {
+                font-size: 53px;
+            }
+
+            .photo-frame {
+                width: 300px;
+                height: 390px;
+            }
+
+            .hero-badge {
+                left: 0;
+            }
+
+            .education-grid,
+            .achievement-grid,
+            .media-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-card {
+                padding: 30px 25px;
+            }
+
+            .about-text h3,
+            .contact-info h3 {
+                font-size: 34px;
+            }
+
+            .contact-form {
+                padding: 25px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .ornament {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Ornamen Batik -->
+    <div class="javanese-pattern"></div>
+
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header>
+
+        <div class="container">
+
+            <nav>
+
+                <a href="#beranda" class="logo">
+
+                    <div class="logo-mark">
+                        AR
+                    </div>
+
+                    <div class="logo-text">
+                        <strong>Agustin Rahayu</strong>
+                        <small>Intan Berlianti</small>
+                    </div>
+
+                </a>
+
+
+                <ul class="nav-links" id="navLinks">
+
+                    <li>
+                        <a href="#beranda" class="active">
+                            Beranda
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#profil">
+                            Profil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#edukasi">
+                            Konten Edukasi
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#pengalaman">
+                            Pengalaman
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#prestasi">
+                            Prestasi/Karya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#media">
+                            Media Pembelajaran
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#kontak">
+                            Kontak
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <div class="menu-btn" id="menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         BERANDA
+    ========================================== -->
+
+    <section class="hero" id="beranda">
+
+        <span class="ornament ornament-left">
+            ❖
+        </span>
+
+        <span class="ornament ornament-right">
+            ❖
+        </span>
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <div class="hero-text">
+
+                    <div class="eyebrow">
+                        Sugeng Rawuh
+                    </div>
+
+                    <h1>
+                        Agustin Rahayu
+                        <span>Intan Berlianti</span>
+                    </h1>
+
+                    <h3>
+                        Guru Ilmu Pengetahuan Sosial
+                        <br>
+                        SMP Negeri 1 Kwadungan
+                    </h3>
+
+                    <p>
+                        Selamat datang di portofolio saya.
+                        Ruang berbagi inspirasi, pengetahuan,
+                        pengalaman, dan karya dalam dunia pendidikan
+                        serta pembelajaran Ilmu Pengetahuan Sosial.
+                    </p>
+
+                    <a href="#profil" class="btn">
+                        Kenali Saya Lebih Dekat
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="hero-photo">
+
+                    <div class="photo-frame">
+
+                        <!--
+                            GANTI FOTO DI BAWAH INI
+                            dengan foto guru Anda.
+                            
+                            Contoh:
+                            src="images/foto-guru.jpg"
+                        -->
+
+                        <img
+                            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=80"
+                            alt="Agustin Rahayu Intan Berlianti">
+
+                    </div>
+
+
+                    <div class="hero-badge">
+
+                        <strong>Guru IPS</strong>
+
+                        <small>
+                            SMP Negeri 1 Kwadungan
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         PROFIL
+    ========================================== -->
+
+    <section class="section profile" id="profil">
+
+        <span class="ornament ornament-right">
+            ❖
+        </span>
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Tentang Saya</span>
+
+                <h2>Profil Guru</h2>
+
+                <p>
+                    Mengenal lebih dekat sosok pendidik
+                    dan perjalanan dalam dunia pendidikan.
+                </p>
+
+            </div>
+
+
+            <div class="profile-grid">
+
+                <div class="profile-card">
+
+                    <h3>
+                        Identitas
+                    </h3>
+
+                    <div class="profile-info">
+
+                        <div>
+                            <i class="fa-solid fa-user"></i>
+
+                            <div>
+                                <strong>Nama</strong>
+                                <span>
+                                    Agustin Rahayu Intan Berlianti
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <i class="fa-solid fa-book"></i>
+
+                            <div>
+                                <strong>Mata Pelajaran</strong>
+                                <span>
+                                    Ilmu Pengetahuan Sosial
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <i class="fa-solid fa-school"></i>
+
+                            <div>
+                                <strong>Sekolah</strong>
+                                <span>
+                                    SMP Negeri 1 Kwadungan
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <div>
+                                <strong>Kabupaten/Kota</strong>
+                                <span>
+                                    Silakan tambahkan
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-text">
+
+                    <h3>
+                        Mendidik dengan hati,
+                        menginspirasi dengan ilmu.
+                    </h3>
+
+                    <p>
+                        Pendidikan bukan hanya tentang menyampaikan
+                        pengetahuan, tetapi juga membangun karakter,
+                        menumbuhkan rasa ingin tahu, dan membantu peserta
+                        didik memahami kehidupan di sekitarnya.
+                    </p>
+
+                    <p>
+                        Sebagai guru Ilmu Pengetahuan Sosial, saya berusaha
+                        menghadirkan pembelajaran yang kontekstual,
+                        menarik, dan dekat dengan kehidupan sehari-hari.
+                    </p>
+
+                    <div class="quote">
+                        “Nguri-uri budaya, netepi ilmu,
+                        mbangun bangsa.”
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         KONTEN EDUKASI
+    ========================================== -->
+
+    <section class="section" id="edukasi">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Belajar Bersama</span>
+
+                <h2>Konten Edukasi</h2>
+
+                <p>
+                    Materi dan artikel pembelajaran IPS
+                    yang informatif dan mudah dipahami.
+                </p>
+
+            </div>
+
+
+            <div class="education-grid">
+
+                <article class="edu-card">
+
+                    <div class="edu-icon">
+                        <i class="fa-solid fa-earth-asia"></i>
+                    </div>
+
+                    <h3>
+                        Geografi
+                    </h3>
+
+                    <p>
+                        Mengenal lingkungan, wilayah,
+                        masyarakat, dan fenomena geografis
+                        di sekitar kita.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Baca Materi →
+                    </a>
+
+                </article>
+
+
+                <article class="edu-card">
+
+                    <div class="edu-icon">
+                        <i class="fa-solid fa-landmark"></i>
+                    </div>
+
+                    <h3>
+                        Sejarah
+                    </h3>
+
+                    <p>
+                        Memahami perjalanan sejarah Indonesia
+                        dan mengambil nilai dari berbagai
+                        peristiwa masa lalu.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Baca Materi →
+                    </a>
+
+                </article>
+
+
+                <article class="edu-card">
+
+                    <div class="edu-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+
+                    <h3>
+                        Sosiologi
+                    </h3>
+
+                    <p>
+                        Memahami interaksi sosial, keberagaman,
+                        kelompok masyarakat, dan kehidupan sosial.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Baca Materi →
+                    </a>
+
+                </article>
+
+
+                <article class="edu-card">
+
+                    <div class="edu-icon">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+
+                    <h3>
+                        Ekonomi
+                    </h3>
+
+                    <p>
+                        Materi mengenai kegiatan ekonomi,
+                        kebutuhan manusia, produksi, distribusi,
+                        dan konsumsi.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Baca Materi →
+                    </a>
+
+                </article>
+
+
+                <article class="edu-card">
+
+                    <div class="edu-icon">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <h3>
+                        Artikel Pendidikan
+                    </h3>
+
+                    <p>
+                        Kumpulan artikel mengenai pembelajaran,
+                        pendidikan karakter, dan pengalaman mengajar.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Baca Artikel →
+                    </a>
+
+                </article>
+
+
+                <article class="edu-card">
+
+                    <div class="edu-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <h3>
+                        Tips Belajar
+                    </h3>
+
+                    <p>
+                        Tips dan strategi belajar IPS agar
+                        lebih menyenangkan, aktif, dan bermakna.
+                    </p>
+
+                    <a href="#" class="read-more">
+                        Selengkapnya →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         PENGALAMAN
+    ========================================== -->
+
+    <section class="section experience" id="pengalaman">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Perjalanan</span>
+
+                <h2>Pengalaman</h2>
+
+                <p>
+                    Perjalanan dan pengalaman dalam dunia pendidikan.
+                </p>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">
+                        PENGALAMAN
+                    </div>
+
+                    <h3>
+                        Guru Ilmu Pengetahuan Sosial
+                    </h3>
+
+                    <p>
+                        SMP Negeri 1 Kwadungan
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">
+                        KEGIATAN PEMBELAJARAN
+                    </div>
+
+                    <h3>
+                        Pengembangan Media Pembelajaran
+                    </h3>
+
+                    <p>
+                        Mengembangkan berbagai media pembelajaran
+                        untuk membantu peserta didik memahami
+                        materi IPS secara lebih menarik.
+                    </p>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">
+                        KEGIATAN PENDIDIKAN
+                    </div>
+
+                    <h3>
+                        Pengembangan Kompetensi Guru
+                    </h3>
+
+                    <p>
+                        Mengikuti kegiatan pengembangan profesional
+                        dan berbagai aktivitas yang mendukung
+                        peningkatan kualitas pembelajaran.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         PRESTASI & KARYA
+    ========================================== -->
+
+    <section class="section" id="prestasi">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Pencapaian</span>
+
+                <h2>Prestasi & Karya</h2>
+
+                <p>
+                    Ruang untuk menampilkan penghargaan,
+                    karya, dan pencapaian dalam pendidikan.
+                </p>
+
+            </div>
+
+
+            <div class="achievement-grid">
+
+                <div class="achievement">
+
+                    <i class="fa-solid fa-trophy"></i>
+
+                    <h3>
+                        Prestasi
+                    </h3>
+
+                    <p>
+                        Tambahkan penghargaan atau prestasi
+                        yang pernah diperoleh.
+                    </p>
+
+                </div>
+
+
+                <div class="achievement">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    <h3>
+                        Karya Tulis
+                    </h3>
+
+                    <p>
+                        Tambahkan artikel, modul, buku,
+                        atau karya tulis pendidikan.
+                    </p>
+
+                </div>
+
+
+                <div class="achievement">
+
+                    <i class="fa-solid fa-medal"></i>
+
+                    <h3>
+                        Sertifikat
+                    </h3>
+
+                    <p>
+                        Tambahkan sertifikat pelatihan,
+                        workshop, seminar, atau kegiatan lainnya.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         MEDIA PEMBELAJARAN
+    ========================================== -->
+
+    <section class="section media" id="media">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Sumber Belajar</span>
+
+                <h2>Media Pembelajaran</h2>
+
+                <p>
+                    Berbagai media yang dapat digunakan
+                    peserta didik untuk belajar IPS.
+                </p>
+
+            </div>
+
+
+            <div class="media-grid">
+
+                <article class="media-card">
+
+                    <div class="media-image">
+                        <i class="fa-solid fa-video"></i>
+                    </div>
+
+                    <div class="media-content">
+
+                        <h3>
+                            Video Pembelajaran
+                        </h3>
+
+                        <p>
+                            Materi IPS dalam bentuk video
+                            pembelajaran yang menarik.
+                        </p>
+
+                        <a href="#" class="read-more">
+                            Lihat Video →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="media-card">
+
+                    <div class="media-image">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </div>
+
+                    <div class="media-content">
+
+                        <h3>
+                            Modul & PDF
+                        </h3>
+
+                        <p>
+                            Kumpulan modul, bahan ajar,
+                            dan materi pembelajaran IPS.
+                        </p>
+
+                        <a href="#" class="read-more">
+                            Lihat Materi →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="media-card">
+
+                    <div class="media-image">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+
+                    <div class="media-content">
+
+                        <h3>
+                            Kuis Interaktif
+                        </h3>
+
+                        <p>
+                            Media kuis untuk menguji pemahaman
+                            peserta didik setelah pembelajaran.
+                        </p>
+
+                        <a href="#" class="read-more">
+                            Mulai Kuis →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         KONTAK
+    ========================================== -->
+
+    <section class="section contact" id="kontak">
+
+        <span class="ornament ornament-right">
+            ❖
+        </span>
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <span>Hubungi Saya</span>
+
+                <h2>Kontak</h2>
+
+                <p>
+                    Silakan hubungi untuk keperluan pendidikan,
+                    kolaborasi, atau berbagi informasi.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-info">
+
+                    <h3>
+                        Mari terhubung
+                    </h3>
+
+                    <p>
+                        Saya terbuka untuk berbagi pengalaman,
+                        berdiskusi mengenai pembelajaran IPS,
+                        maupun berkolaborasi dalam kegiatan pendidikan.
+                    </p>
+
+
+                    <div class="contact-item">
+
+                        <i class="fa-solid fa-school"></i>
+
+                        <div>
+
+                            <strong>Sekolah</strong>
+
+                            <span>
+                                SMP Negeri 1 Kwadungan
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+
+                            <strong>Lokasi</strong>
+
+                            <span>
+                                Kabupaten/Kota
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-item">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+
+                            <strong>Email</strong>
+
+                            <span>
+                                emailanda@example.com
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <form class="contact-form" id="contactForm">
+
+                    <div class="form-group">
+
+                        <label>
+                            Nama
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Nama Anda"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            placeholder="Email Anda"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Pesan
+                        </label>
+
+                        <textarea
+                            placeholder="Tuliskan pesan Anda..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn">
+                        Kirim Pesan
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <h3>
+                        Agustin Rahayu
+                    </h3>
+
+                    <p>
+                        Guru Ilmu Pengetahuan Sosial
+                        <br>
+                        SMP Negeri 1 Kwadungan
+                    </p>
+
+                </div>
+
+
+                <div class="social">
+
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                    <a href="#" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="copyright">
+
+                © 2026 Agustin Rahayu Intan Berlianti.
+                Semua Hak Dilindungi.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script>
+
+        // =====================================
+        // MOBILE MENU
+        // =====================================
+
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+
+        menuBtn.addEventListener("click", () => {
+
+            navLinks.classList.toggle("show");
+
+            const icon = menuBtn.querySelector("i");
+
+            if (navLinks.classList.contains("show")) {
+
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+
+            } else {
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+
+            }
+
+        });
+
+
+        // =====================================
+        // CLOSE MENU AFTER CLICK
+        // =====================================
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                navLinks.classList.remove("show");
+
+                const icon = menuBtn.querySelector("i");
+
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+
+            });
+
+        });
+
+
+        // =====================================
+        // ACTIVE NAVIGATION
+        // =====================================
+
+        const sections = document.querySelectorAll("section[id]");
+        const navItems = document.querySelectorAll(".nav-links a");
+
+        window.addEventListener("scroll", () => {
+
+            let current = "";
+
+            sections.forEach(section => {
+
+                const sectionTop = section.offsetTop - 150;
+
+                if (window.scrollY >= sectionTop) {
+
+                    current = section.getAttribute("id");
+
+                }
+
+            });
+
+            navItems.forEach(item => {
+
+                item.classList.remove("active");
+
+                if (item.getAttribute("href") === "#" + current) {
+
+                    item.classList.add("active");
+
+                }
+
+            });
+
+        });
+
+
+        // =====================================
+        // FORM KONTAK
+        // =====================================
+
+        const contactForm =
+            document.getElementById("contactForm");
+
+        contactForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            alert(
+                "Terima kasih. Pesan Anda telah disiapkan."
+            );
+
+            contactForm.reset();
+
+        });
+
+    </script>
+
+</body>
+</html>
